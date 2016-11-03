@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>导航(基础样式)</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>1.基础样式</h2>
+<p>Bootstrap框架中制作导航条主要通过“.nav”样式。默认的“.nav”样式不提供默认的导航样式，必须附加另外一个样式才会有效，比如“nav-tabs”、“nav-pills”之类。比如右侧代码编辑器中就有一个tab导航条的例子，他的实现方法就是为ul标签加入.nav和nav-tabs两个类样式。</p>
+<ul class="nav nav-tabs">
+    <li><a href="##">Home</a></li>
+    <li><a href="##">CSS3</a></li>
+ 	<li><a href="##">Sass</a></li>
+ 	<li><a href="##">jQuery</a></li>
+ 	<li><a href="##">Responsive</a></li>
+</ul>
+<h2>2.标签型tab导航</h2>
+<p>标签形导航是通过“nav-tabs”样式来实现。在制作标签形导航时需要在原导航“nav”上追加此类名</p>
+<ul class="nav nav-tabs">
+    <li><a href="##">Home</a></li>
+ 	<li><a href="##">CSS3</a></li>
+ 	<li><a href="##">Sass</a></li>
+ 	<li><a href="##">jQuery</a></li>
+ 	<li><a href="##">Responsive</a></li>
+</ul>
+<br />
+<p>假设我们想让“Home”项为当前选中项，只需要在其标签上添加类名“class="active"</p>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="##">Home</a></li>
+ 	<li><a href="##">CSS3</a></li>
+ 	<li><a href="##">Sass</a></li>
+ 	<li><a href="##">jQuery</a></li>
+ 	<li><a href="##">Responsive</a></li>
+</ul>
+<br />
+<p>有的选项卡还带有禁用状态，实现这样的效果，只需要在标签项上添加“class="disabled"”即可</p>
+ <ul class="nav nav-tabs">
+    <li class="active"><a href="##">Home</a></li>
+ 	<li><a href="##">CSS3</a></li>
+ 	<li><a href="##">Sass</a></li>
+ 	<li><a href="##">jQuery</a></li>
+ 	<li class="disabled"><a href="##">Responsive</a></li>
+ </ul>
+ <h2>3.实现原理</h2>
+ <ul class="nav nav-tabs nav-justified">
+  <li class="active"><a href="##">Home</a></li>
+  <li><a href="##">CSS3</a></li>
+  <li><a href="##">Sass</a></li>
+  <li><a href="##">jQuery</a></li>
+  <li><a href="##">Responsive</a></li>
+</ul>
+<br />
+<ul class="nav nav-pills nav-justified">
+      <li class="active"><a href="##">Home</a></li>
+      <li><a href="##">CSS3</a></li>
+      <li><a href="##">Sass</a></li>
+      <li><a href="##">jQuery</a></li>
+      <li><a href="##">Responsive</a></li>
+</ul>
+<h2>4.自适应导航</h2>
+<ul class="nav nav-tabs nav-justified">
+  <li class="active"><a href="##">Home</a></li>
+  <li><a href="##">CSS3</a></li>
+  <li><a href="##">Sass</a></li>
+  <li><a href="##">jQuery</a></li>
+  <li><a href="##">Responsive</a></li>
+</ul>
+<br />
+<ul class="nav nav-pills nav-justified">
+      <li class="active"><a href="##">Home</a></li>
+      <li><a href="##">CSS3</a></li>
+      <li><a href="##">Sass</a></li>
+      <li><a href="##">jQuery</a></li>
+      <li><a href="##">Responsive</a></li>
+</ul>
+<h2>5.导航加下拉菜单</h2>
+<ul class="nav nav-pills">
+  <li class="active"><a href="##">首页</a></li>
+  <li class="dropdown">
+      <a href="##" class="dropdown-toggle" data-toggle="dropdown">教程<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+          <li><a href="##">CSS3</a></li>
+        <li><a href="##">Sass</a></li>
+        <li><a href="##">jQuery</a></li>
+        <li><a href="##">Responsive</a></li>
+      </ul>
+  </li>
+ <li><a href="##">关于我们</a></li>
+</ul>
+<br />
+<h2>6.面包屑导航</h2>
+<p>面包屑(Breadcrumb)一般用于导航，主要是起的作用是告诉用户现在所处页面的位置（当前位置）。在Bootstrap框架中面包屑也是一个独立模块组件</p>
+<p>使用方式就很简单，为ol加入breadcrumb类</p>
+<ol class="breadcrumb">
+  <li><a href="#">首页</a></li>
+  <li><a href="#">我的书</a></li>
+  <li class="active">《图解CSS3》</li>
+</ol> 
+
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+</body>
+</html>
